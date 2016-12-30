@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/slider.css">
 
-    <link rel="stylesheet" href="css/python.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   </head>
-<body>
+<body link="blue">
   <header>
   	<!--nav name -->
 	<nav id="header-brand" class="navbar navbar-default">
@@ -61,17 +60,22 @@
 
   <!--Main content-->
   
-  <div id="main-content" class="container-fluid">
+  <div id="tetris-main-content" class="container-fluid">
     <div class="row">
       <div class="col-lg-12">
-        <h2> Connect-4 GUI </h2>
+        <h2> TETRIS GAME JAVA </h2>
         <hr>
-        <div id="img-content" class="w3-content" style="max-width:400px">
-          <img class="mySlides" src="images/python/connect4-1.png" style="width:100%">
-          <img class="mySlides" src="images/python/connect4-2.png" style="width:100%">
-          <img class="mySlides" src="images/python/connect4-3.png" style="width:100%">
-          <img class="mySlides" src="images/python/connect4-4.png" style="width:100%">
-          <img class="mySlides" src="images/python/connect4-5.png" style="width:100%">
+        <!-- <div id="img-content" class="w3-content" style="max-width:300px; vertical-align:middle; text-align:center">
+          <img class="mySlides" src="images/Android/home_1.png" style="width:100%">
+          <img class="mySlides" src="images/Android/home_2.png" style="width:100%">
+          <img class="mySlides" src="images/Android/home_3.png" style="width:100%">
+          <img class="mySlides" src="images/Android/home_4.png" style="width:100%">
+          <img class="mySlides" src="images/Android/home_5.png" style="width:100%">
+          <img class="mySlides" src="images/Android/home_6.png" style="width:100%">
+          <img class="mySlides" src="images/Android/home_7.png" style="width:100%">
+          <img class="mySlides" src="images/Android/home_8.png" style="width:100%">
+          <img class="mySlides" src="images/Android/home_9.png" style="width:100%">
+          <img class="mySlides" src="images/Android/home_10.png" style="width:100%">
         </div>
 
         <div class="w3-center">
@@ -84,19 +88,44 @@
           <button class="w3-btn demo" onclick="currentDiv(3)">3</button>
           <button class="w3-btn demo" onclick="currentDiv(4)">4</button>
           <button class="w3-btn demo" onclick="currentDiv(5)">5</button>
-        </div>
+          <button class="w3-btn demo" onclick="currentDiv(6)">6</button>
+          <button class="w3-btn demo" onclick="currentDiv(7)">7</button>
+          <button class="w3-btn demo" onclick="currentDiv(8)">8</button>
+          <button class="w3-btn demo" onclick="currentDiv(9)">9</button>
+          <button class="w3-btn demo" onclick="currentDiv(10)">10</button>
+        </div> -->
 
         <div id="description-header" class="col-lg-12">
           <div class="jumbotron">
-            <div class="description">
-              <h2 class="title">Description</h2>
-              <br><p>Connect4 game is a Python application that I developed to have fun playing game with pc-bot. Using TKinter to implement a GUI by drawing rows and columns into a board of Connect Four game. In addition, by implementing some conditional requirements, the game can be restarted or quited by pressing on menu buttons and it also shows the text at the bottom to tell player make move.  </p>
-              <p><a href="https://en.wikipedia.org/wiki/Connect_Four" target="_blank">How to play</a></p> 
+            <div class="game-description">
+              <h2 class="description">Game Description</h2>
+              <p style="font-size:1em">Tetris is a game in which the player moves and rotates dropping pieces so that they form solid lines. Completely filled lines are cleared, giving points to the player. The Wikipedia page for Tetris is a very good source of information about the various incarnations of the game, if you have questions. There are many free versions of Tetris online that you could look at such as <a href="http://www.tetrislive.com/" target="_blank" >www.tetrislive.com </a>
+              </p>
             </div>
+            
+            <h2 class="game-pieces">Game Pieces</h2>
+            <p style="font-size:1em">Our abstraction will be that a Piece object represents a single Tetris piece with position and rotational state.A piece can be rotated 90° clockwise. Enough rotations get you back to the original orientation, Each Tetris piece has one (the O), or four (the L, J, T, I, S and Z) distinct rotational states as shown on the next page. At the top of the diagram notice the increasing series of numbers 0 – 3 which represent the various rotational states. New pieces are initialized to state zero. Clockwise rotations increment the rotational state.
+            
+            <div class="box">
+              <img src="images/Java/gamepiece.png" alt="pieces">
+              <br><br>
+              <img src="images/Java/game.png" alt="game-play">
+            </div>
+            
+            <br>
+            Please check out the Github link below for more information.
 
-            <div class="link-download">
-              <a class="btn btn-default" href="files/Connect4-GUI.py"><span class="glyphicon glyphicon-download-alt"> Download .py File</span></a>
-            </div>
+            </p>
+          
+            <div class="contact-links">
+            <ul style="list-style-type: none">
+              <li>
+                <a class="btn btn-default" href="https://github.com/tuanhuynh52/Tetris" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;Github
+                </a>
+              </li>
+    
+            </ul>
+          </div>
           </div> 
         </div>
       </div>
@@ -108,7 +137,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 
-  <script>
+  <!-- <script>
     var slideIndex = 1;
     showDivs(slideIndex);
 
@@ -135,7 +164,7 @@
       x[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " w3-red";
     }
-  </script>
+  </script> -->
 
 </body>
 </html>
