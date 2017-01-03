@@ -112,17 +112,17 @@ body {
 }
 
 /*****Footer****/
-.panel-footer {
+/*.panel-footer {
   background-color: #999999;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
-
-#copyright {
+*/
+/*#copyright {
   text-shadow: 1px 1px #003300; 
   
-}
+}*/
 
 /**** PYTHON *******/
 .container-fluid h2 {
