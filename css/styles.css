@@ -1,5 +1,5 @@
 body {
-  font-size: 15px;
+  font-size: 1em;
   background-color: #ffffff;
   font-family: 'Oxygen', sans-serif;
 }
@@ -10,7 +10,7 @@ body {
   border: 0;
   background: url('../images/space.jpg') no-repeat;
   max-width: 100%;
-  height: 150px;
+  height: 120px;
 }
 #header-brand span {
   color: white;
@@ -18,9 +18,10 @@ body {
 }
 
 #header-brand h1 {
+  margin:auto;
   color: white;
   font-size: 4.3em;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 #header-brand p {
   padding-top: 10px;
@@ -45,12 +46,13 @@ body {
 }
 #nav-list a {
   color: #951C49;
+  font-size: 1.5em;
   text-align: center;
 }
 #nav-list a:hover {
   background: #E7E7E7;
 }
-#nav-list > .active > a {
+#nav-list .active {
   color: #E7E7E7;
 }
 
@@ -65,15 +67,15 @@ body {
 }
 
 /*****MAIN CONTENT*****/
-#intro {
-  font-size: 1em;
-}
 
 .container .jumbotron h1 {
-  font-size: 40px;
+  font-size: 4em;
   font-weight: 900;
-  padding-top: 0;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+}
+
+#intro {
+  font-size: 1em;
 }
 
 .contact-links {
@@ -115,8 +117,7 @@ body {
 /*.panel-footer {
   background-color: #999999;
   position: relative;
-  bottom: 0;
-  width: 100%;
+  width: 100%ynm mh iiiiiiiiiiiiiiiiik;
 }
 */
 /*#copyright {
@@ -175,6 +176,13 @@ body {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+
+  #intro img {
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+
   .panel-footer {
     position: absolute;
     bottom: 0;
@@ -185,6 +193,10 @@ body {
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
+  #intro img {
+    float: left;
+    margin-right: 15px;
+  }
 
   .panel-footer {
     position: absolute;
@@ -195,7 +207,17 @@ body {
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  
+
+  #intro img {
+    position: relative;
+    left: 50%;
+    margin-left: -135px;
+  }
+
+  .intro-para {
+    padding-top: 20px;
+  }
+
   .panel-footer {
     display: none;
   }
@@ -206,11 +228,22 @@ body {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   #header-brand {
-    height: 100px;
+    height: 60px;
   }
   #header-brand h1 {
     font-size: 3.5em;
     margin-top: 10px;
+    text-align: center;
+  }
+
+  #intro img {
+    position: relative;
+    left: 50%;
+    margin-left: -135px;
+  }
+
+  #intro .intro-para {
+    padding-top: 20px;
   }
 
   .panel-footer {
@@ -225,7 +258,14 @@ body {
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
+
+  #intro img {
+    position: relative;
+    left: 50%;
+    margin-left: -135px;
+  }
+
   .panel-footer {
     display: none;
-  } 
+  }
 }
