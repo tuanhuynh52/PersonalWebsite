@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOME PAGE</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- add bootstrap for navbar -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--Icon-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<!-- add nav header name tag-->
+<nav id="header-brand" class="navbar navbar-default">
+	<div class="container-fluid">
+		<span class="text-center">
+			<h1>TUAN HUYNH</h1>
+			<p class="hidden-xs">Computer Science & Systems</p>
+		</span>
+	</div>		
+</nav> 
+
+<!--Menu bar collaspe using navbar-inverse -->
+<nav id="menu-bar" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="color: white">MENU</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" >
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;About Me</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-list-alt"></span> &nbsp;Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="html/java.html">Java</a></li>
+            <li><a href="html/android.html">Android</a></li>
+            <li><a href="html/python.html">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content-->
+<div id="main-content" class="container-fluid">
+	<div class="jumbotron">
+		<h1><marquee behavior="scroll" direction="left">Welcome to my personal site!</marquee> </h1>
+
+		<div id="intro" class="row">
+        <div class="col-lg-12">
+          <p class="intro-para"><img src="images/Profile.jpg" alt="profile-img" width="270" height="400" align="left">I am a new graduate student with a bachelor degree in Computer Science and Systems. I am mostly comfortable with Java, but also have experience with several other programming languages. I am an independent student with academic experience in learning software development, database management system, and related Android mobile app programming. Good communication skills with a background of working co-op and individual, be interested in researching online and studying on the internet. Technically proficient skills in Microsoft Office (any version), developing software, and other compilers for coding.</p>
+        </div>
+     </div>
+
+     <div class="row">
+        <div class="col-lg-12">
+          <div class="contact-links">
+            <br><br>
+            <p>&emsp;&emsp;More information about me shown below.</p>
+            <ul style="list-style-type: none">
+              <li>
+                <a class="btn btn-default" href="tel:206-724-9657">
+                <span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;(206) 724-9657
+                </a>
+              </li>
+              <li>
+                <a class="btn btn-default" href="mailto:tuanhuynh5290@gmail.com"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;tuanhuynh5290@gmail.com</a>
+              </li>
+              <li>
+                <a class="btn btn-default" href="https://github.com/tuanhuynh52/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;Github
+                </a>
+              </li>
+              <li>
+                <a class="btn btn-default" href="https://www.linkedin.com/in/tuan-huynh-13613b118/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;&nbsp;Linkedin
+                </a>
+              </li>
+              <li>
+                <a class="btn btn-default" href="../files/Resume.pdf" target="_blank"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+
+	</div>
+</div>
+
+</body>
+</html>
