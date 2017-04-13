@@ -1,0 +1,143 @@
+<!doctype html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOME PAGE</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/python.css">
+
+	<!-- add bootstrap for navbar -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--Icon-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<!-- add nav header name tag-->
+<nav id="header-brand" class="navbar navbar-default">
+	<div class="container-fluid">
+		<span class="text-center">
+			<h1>TUAN HUYNH</h1>
+			<p class="hidden-xs">Computer Science & Systems</p>
+		</span>
+	</div>		
+</nav> 
+
+<!--Menu bar collaspe using navbar-inverse -->
+<nav id="menu-bar" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" style="color: white">MENU</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" >
+        <li><a href="../html/index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;About Me</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-list-alt"></span> &nbsp;Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../html/java.html">Java</a></li>
+            <li><a href="../html/android.html">Android</a></li>
+            <li><a href="../html/python.html">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content-->
+<div id="main-content" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2> 1. Connect-4 GUI </h2>
+        <hr style="height:1px;border:none;background-color:#9E9E9E;">
+        <div id="img-content" class="w3-content" style="max-width:600px">
+          <img class="mySlides" src="../images/python/connect4-1.png" style="width:100%">
+          <img class="mySlides" src="../images/python/connect4-2.png" style="width:100%">
+          <img class="mySlides" src="../images/python/connect4-3.png" style="width:100%">
+          <img class="mySlides" src="../images/python/connect4-4.png" style="width:100%">
+          <img class="mySlides" src="../images/python/connect4-5.png" style="width:100%">
+        </div>
+
+        <div class="w3-center">
+          <div class="w3-section">
+            <button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
+            <button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
+          </div>
+          <button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+          <button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+          <button class="w3-btn demo" onclick="currentDiv(3)">3</button>
+          <button class="w3-btn demo" onclick="currentDiv(4)">4</button>
+          <button class="w3-btn demo" onclick="currentDiv(5)">5</button>
+        </div>
+
+        <div id="description-header" class="col-lg-12">
+          <div class="jumbotron">
+            <div class="description">
+              <h2 class="title"><center>Description</center></h2>
+              <br><p>&emsp;&emsp;Connect4 game is a Python application that I developed to have fun playing game with pc-bot. Using TKinter to implement a GUI by drawing rows and columns into a board of Connect Four game. In addition, by implementing some conditional requirements, the game can be restarted or quited by pressing on menu buttons and it also shows the text at the bottom to tell player make move.  </p>
+              <p><a href="https://en.wikipedia.org/wiki/Connect_Four" target="_blank">How to play</a></p> 
+            </div>
+
+            <div class="link-download">
+              <a class="btn btn-default" href="../files/Connect4-GUI.py" target="_blank"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Download Connect4-GUI.py</a>
+            </div>
+          </div> 
+        </div>
+        <hr style="height:2px;border:none;color:#333;background-color:#333;" />
+        <h2> 2. Updating... </h2>
+        <hr style="height:1px;border:none;background-color:#9E9E9E;">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" w3-red", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-red";
+    }
+  </script>
+
+</body>
+</html>
